@@ -1,0 +1,12 @@
+NetworkNode(网络): EntityType
+    properties:
+        name(名称): Text
+        description(描述): Text
+        posx(波克斯): Integer
+        posy(花束): Integer
+        cost(成本): Integer
+        sla(服务级别): Text
+        semanticType(semanticType): Text
+            index: Text
+        relations:
+            link(关联): NetworkNode

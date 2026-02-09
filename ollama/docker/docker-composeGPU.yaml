@@ -1,0 +1,39 @@
+services:
+  ollamaGPU:
+    container_name: ollamaGPU
+    image: ollama/ollama:latest
+    ports:
+      - 11434:11434
+    volumes:
+      - ./ollama/root:/root/.ollama
+    runtime: nvidia
+    environment:
+      - 'OLLAMA_KEEP_ALIVE=24h'
+      - 'OLLAMA_DEBUG=1'
+      - 'NVIDIA_VISIBLE_DEVICES=all'
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: [gpu]
+            count: all
+    tty: true
+    restart: unless-stopped
+
+  open-webuiGPU:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webuiGPU
+    volumes:
+      - ./open-webui:/app/backend/data
+    depends_on:
+      - ollamaGPU
+    ports:
+      - 3000:8080
+    environment:
+      - 'OLLAMA_BASE_URL=http://ollamaGPU:11434'
+      - 'WEBUI_SECRET_KEY='
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
+

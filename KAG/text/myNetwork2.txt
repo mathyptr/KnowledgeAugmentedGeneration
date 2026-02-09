@@ -1,0 +1,6 @@
+In my network, called mynetwork, there are many nodes that connect to each other.
+Each node has an identification number (Id).
+My network has a graph that describes how the nodes (NetworkNode) are connected to each other.
+The node are:
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24
+
