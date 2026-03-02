@@ -5,7 +5,7 @@ services:
     ports:
       - 11434:11434
     volumes:
-      - ./ollama/root:/root/.ollama
+      - ./ollama_volume/root:/root/.ollama
     tty: true
     restart: unless-stopped
 

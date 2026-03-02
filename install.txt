@@ -1,31 +1,33 @@
 git clone https://github.com/mathyptr/KnowledgeAugmentedGeneration.git
 
-chmod u+x startOllamaGPU.sh
-chmod u+x stopOllamaGPU.sh
+cd KnowledgeAugmentedGeneration
 
-chmod u+x startOllama.sh
-chmod u+x stopOllama.sh
+chmod u+x ./script/startOllamaGPU.sh
+chmod u+x ./script/stopOllamaGPU.sh
 
-chmod u+x startKAG.sh
-chmod u+x stopKAG.sh
+chmod u+x ./script/startOllama.sh
+chmod u+x ./script/stopOllama.sh
 
-chmod u+x startKAG-OllamaGPU.sh
-chmod u+x stopKAG-OllamaGPU.sh
+chmod u+x ./script/startKAG.sh
+chmod u+x ./script/stopKAG.sh
 
-chmod u+x startKAG-Ollama.sh
-chmod u+x stopKAG-Ollama.sh
+chmod u+x ./script/startKAG-OllamaGPU.sh
+chmod u+x ./script/stopKAG-OllamaGPU.sh
+
+chmod u+x ./script/startKAG-Ollama.sh
+chmod u+x ./script/stopKAG-Ollama.sh
 
 ###############################################################################################################################################################
 ##################FIX issue "No Graph in the Knowledge Exploration section #728" (https://github.com/OpenSPG/KAG/issues/728#issue-3675110546)##################
 #you have to start the container KAG started and after you have to replace the file /home/admin/miniconda3/lib/python3.10/site-packages/kag/builder/component/extractor/knowledge_unit_extractor.py
-./startKAG.sh
+./script/startKAG.sh
 docker cp ./KAG/issue/knowledge_unit_extractor.py:release-openspg-server /home/admin/miniconda3/lib/python3.10/site-packages/kag/builder/component/extractor/
 ###############################################################################################################################################################
 
 #######If you have a GPU you have to execute the following script
-./startOllamaGPU.sh
+./script/startOllamaGPU.sh
 #######otherwise if you have not a GPU you you have to execute the following script
-#./startOllama.sh
+#./script/startOllama.sh
 
 
 
