@@ -1,0 +1,2 @@
+./stopKAG.sh
+./stopOllamaGPU.sh

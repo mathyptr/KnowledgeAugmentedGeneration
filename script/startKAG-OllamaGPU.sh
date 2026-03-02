@@ -1,0 +1,4 @@
+./startOllamaGPU.sh
+./startKAG.sh
+
+

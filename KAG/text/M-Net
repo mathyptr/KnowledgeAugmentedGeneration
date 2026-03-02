@@ -1,0 +1,12 @@
+This is a knowledge base of the network M-net which describes the nodes and the links of this network.
+Every nodes of M-net are connected to other nodes with link.
+ M-net is described with a graph that describes how the nodes are connected to each other. 
+NetworkNode is the entity that describes the nodes of the network  M-net.
+The nodes have the following property:
+1) name is the name of  the node	
+2) cost is the cost of the node	
+3) posx is the x coordinate of the node
+4) posy is the y coordinate of the node
+5) sla is the service level agreement of the node
+The links between nodes have the following property:
+1) dist is the cost of the link between the nodes

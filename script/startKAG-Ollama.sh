@@ -1,0 +1,2 @@
+./startOllama.sh
+./startKAG.sh
