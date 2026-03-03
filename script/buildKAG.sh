@@ -1,2 +1,2 @@
-docker-compose -f ./KAG/docker/docker-compose-west.yaml up
+docker-compose -f ./KAG/docker/docker-compose-west.yaml up -d
 

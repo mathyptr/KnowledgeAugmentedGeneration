@@ -18,7 +18,7 @@ chmod u+x ./script/startKAG-Ollama.sh
 chmod u+x ./script/stopKAG-Ollama.sh
 
 
-./script/buildKAG.sh&
+./script/buildKAG.sh
 
 ###############################################################################################################################################################
 ##################FIX issue "No Graph in the Knowledge Exploration section #728" (https://github.com/OpenSPG/KAG/issues/728#issue-3675110546)##################
@@ -27,10 +27,10 @@ docker cp ./KAG/issue/knowledge_unit_extractor.py release-openspg-server:/home/a
 ###############################################################################################################################################################
 
 #######If you have a GPU you have to execute the following script
-./script/buildOllamaGPU.sh&
+./script/buildOllamaGPU.sh
 
 #######otherwise if you have not a GPU you you have to execute the following script
-#./script/buildOllama.sh&
+#./script/buildOllama.sh
 
 #You can access to KAG using the gollowing url
 http://127.0.0.1:8887/
@@ -41,11 +41,11 @@ http://127.0.0.1:8887/
 #######If you want to stop KAG an Ollama (if you have a GPU) you have to execute the following script
 ./script/stopKAG-OllamaGPU.sh
 #######otherwise if you have not a GPU you you have to execute the following script
-#./script/stopKAG-Ollama.sh&
+#./script/stopKAG-Ollama.sh
 
 #######If you want to start KAG an Ollama (if you have a GPU) you have to execute the following script
 ./script/startKAG-OllamaGPU.sh
 #######otherwise if you have not a GPU you you have to execute the following script
-#./script/startKAG-Ollama.sh&
+#./script/startKAG-Ollama.sh
 
 

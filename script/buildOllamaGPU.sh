@@ -1,1 +1,1 @@
-docker-compose -f ./ollama/docker/docker-composeGPU.yaml up
+docker-compose -f ./ollama/docker/docker-composeGPU.yaml up -d
