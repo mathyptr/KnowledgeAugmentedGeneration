@@ -1,4 +1,11 @@
-./startOllamaGPU.sh
-./startKAG.sh
+#!/bin/bash
+
+if [ -z "$script_dir" ]
+then
+    export script_dir="."
+fi
+
+$script_dir/startOllamaGPU.sh
+$script_dir/startKAG.sh
 
 
