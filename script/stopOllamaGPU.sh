@@ -1,1 +1,1 @@
-docker-compose -f ./ollama/ollamaGPU/docker-composeGPU.yaml stop
+docker-compose -f ./ollama/docker/docker-composeGPU.yaml stop

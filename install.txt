@@ -19,6 +19,9 @@ chmod u+x $script_dir/stopKAG-OllamaGPU.sh
 chmod u+x $script_dir/startKAG-Ollama.sh
 chmod u+x $script_dir/stopKAG-Ollama.sh
 
+chmod u+x ./start.sh
+chmod u+x ./stop.sh
+
 $script_dir/buildKAG.sh
 
 ###############################################################################################################################################################
