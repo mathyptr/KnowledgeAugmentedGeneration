@@ -1,0 +1,6 @@
+id,name,type,chemicalFormula,maxDailyDosage
+PA01,"Acido Acetilsalicilico",MedicalKG.Ingredient, None,4g/die "relations": [{"type": "interactsWith", "target": "PA02", "targetType": "MedicalKG.Ingredient"}, {"type": "contraindicatedFor", "target": "S001", "targetType": "MedicalKG.Disease"}, {"type": "metabolizedBy", "target": "E001", "targetType": "MedicalKG.Enzyme"}, {"type": "targetOf", "target": "G001", "targetType": "MedicalKG.Gene"}]},
+
+PA02,"Warfarin",MedicalKG.Ingredient,None,None "relations": [{"type": "metabolizedBy", "target": "E002", "targetType": "MedicalKG.Enzyme"}, {"type": "targetOf", "target": "G001", "targetType": "MedicalKG.Gene"}]},
+
+PA03,"Diflunisal",MedicalKG.Ingredient, None,None "relations": [{"type": "metabolizedBy", "target": "E002", "targetType": "MedicalKG.Enzyme"}]}

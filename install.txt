@@ -32,24 +32,57 @@ docker cp ./KAG/issue/knowledge_unit_extractor.py release-openspg-server:/home/a
 
 #######If you have a GPU you have to execute the following script
 $script_dir/buildOllamaGPU.sh
-
 #######otherwise if you have not a GPU you you have to execute the following script
 #$script_dir/buildOllama.sh
 
+
+#######################################################################################################
+# Ollama
+#######################################################################################################
+#You can access to open-WebUI using the gollowing url
+http://127.0.0.1:3000/
+#First access you have to create the administrator account
+#For example:
+#           Name: admin
+#           Email: admin@admin.it
+#           password: @dm1n!
+#After you have to pull some model from Ollam.com for example
+#bge-m3:latest
+#embeddinggemma:300m
+#deepseek-coder:1.3b  deepseek-coder:6.7b deepseek-coder:33b
+#deepseek-r1
+#deepseek-v3.2
+#openthinker:7b openthinker:32b
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+
+#######################################################################################################
+# KAG 
+#######################################################################################################
 #You can access to KAG using the gollowing url
 http://127.0.0.1:8887/
 #KAG Default Username: openspg Default password: openspg@kag
 #First access you have to change the password
 
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
 
-#######If you want to stop KAG an Ollama (if you have a GPU) you have to execute the following script
+#######################################################################################################
+#######If you want to stop KAG and Ollama (if you have a GPU) you have to execute the following script
 $script_dir/stopKAG-OllamaGPU.sh
 #######otherwise if you have not a GPU you you have to execute the following script
 #$script_dir/stopKAG-Ollama.sh
+#######################################################################################################
 
-#######If you want to start KAG an Ollama (if you have a GPU) you have to execute the following script
+#######################################################################################################
+#######If you want to start KAG and Ollama (if you have a GPU) you have to execute the following script
 $script_dir/startKAG-OllamaGPU.sh
 #######otherwise if you have not a GPU you you have to execute the following script
 #$script_dir/startKAG-Ollama.sh
+#######################################################################################################
+
+
 
 

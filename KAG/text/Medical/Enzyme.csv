@@ -1,0 +1,4 @@
+id,name,type,family,function
+E001,COX-1,MedicalKG.Enzyme,None,"Prostaglandin Synthesis"
+E002,CYP2C9,MedicalKG.Enzyme,"Cytochrome P450",None
+

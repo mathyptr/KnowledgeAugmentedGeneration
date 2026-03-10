@@ -1,0 +1,4 @@
+id,name,type,locus,commonVariants
+G001,VKORC1,MedicalKG.Gene, None,G1639A, "relations": [{"type": "expresses", "target": "E002", "targetType": "MedicalKG.Enzyme"}]},
+
+

@@ -1,0 +1,7 @@
+type,source,sourceType,target,targetType
+contains,D001,MedicalKG.Drug,PA01,MedicalKG.Ingredient
+contains,D002,MedicalKG.Drug,PA02,MedicalKG.Ingredient
+contains,D003,MedicalKG.Drug,PA03,MedicalKG.Ingredient
+
+
+

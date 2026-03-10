@@ -1,0 +1,7 @@
+id,name,type,brandName,drugClass
+D001,Aspirina,MedicalKG.Drug,Aspirina,FANS
+D002,Coumadin,MedicalKG.Drug,Coumadin,Anticoagulant
+D003,Diflunisal,MedicalKG.Drug,Diflunisal,FANS
+
+
+

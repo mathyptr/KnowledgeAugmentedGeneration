@@ -1,0 +1,4 @@
+type,source,sourceType,target,targetType
+expresses,G001,MedicalKG.Gene,E002,MedicalKG.Enzyme
+
+

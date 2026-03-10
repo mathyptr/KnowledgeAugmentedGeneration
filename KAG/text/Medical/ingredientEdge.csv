@@ -1,0 +1,8 @@
+type,source,sourceType,target,targetType
+interactsWith, PA01,MedicalKG.Ingredient,PA02, MedicalKG.Ingredient
+contraindicatedFor, PA01,MedicalKG.Ingredient,S001, MedicalKG.Disease
+metabolizedBy,PA01,MedicalKG.Ingredient, E001,MedicalKG.Enzyme
+targetOf,PA01,MedicalKG.Ingredient, G001MedicalKG.Gene
+metabolizedBy,PA02,MedicalKG.Ingredient, E002, MedicalKG.Enzyme
+targetOf,PA02,MedicalKG.Ingredient,G001,MedicalKG.Gene
+metabolizedBy,PA03,MedicalKG.Ingredient, E002, MedicalKG.Enzyme

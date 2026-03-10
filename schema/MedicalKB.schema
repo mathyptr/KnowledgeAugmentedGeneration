@@ -1,0 +1,36 @@
+namespace MedicalKG
+
+Drug(药物): EntityType
+    properties:
+        brandName(商品名): Text
+        drugClass(药物种类): Text
+    relations:
+        contains(包含): Ingredient
+
+Ingredient(成分): EntityType
+    properties:
+        chemicalFormula(化学式): Text
+        maxDailyDosage(最大日剂量): Text
+    relations:
+        metabolizedBy(被代谢): Enzyme
+        contraindicatedFor(禁忌症): Disease
+        targetOf(靶点): Gene
+        interactsWith(药物相互作用): Ingredient
+
+Enzyme(酶): EntityType
+    properties:
+        family(家族): Text
+        function(功能): Text
+
+Gene(基因): EntityType
+    properties:
+        locus(基因座): Text
+        commonVariants(常见变体): Text
+    relations:
+        expresses(表达): Enzyme
+
+Disease(疾病): EntityType
+    properties:
+        description(描述): Text
+        name(名称): Text
+            index: Text
