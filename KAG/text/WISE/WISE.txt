@@ -1,0 +1,14 @@
+KNOWLEDGE GRAPH STRUCTURE AND REASONING RULES
+
+1. ENTITY DEFINITIONS
+- WaterbaseWISE.WaterBody: Represents waterbody  ('waterBodyIdentifier' property). 
+- WaterbaseWISE.ObservedPropertyDeterminand: Represents the observed property (e.g. Ammonium). Contains the biochemical properties inside the waterbody.
+- WaterbaseWISE.AggregatedDataByWaterBody: Represents the aggregated data of waterbody. Each AggregatedData is linked to an waterBody via the 'waterBodyIdentifier' relationship.
+
+2. RELATIONSHIP LOGIC (MULTI-HOP REASONING)
+The system must navigate the relationships between nodes to answer:
+- Interactions: To find interactions between WaterBody and observed property, identify the respective biological element (observed property) via the 'contains' relationship and check for the presence of interaction relationships between them.
+
+3. BIOLOGICAL REASONING
+For biological explanation, the system must extract information from the 'biology', 'mechanism', or 'description' properties associated with the WaterBody nodes or their relationships.
+

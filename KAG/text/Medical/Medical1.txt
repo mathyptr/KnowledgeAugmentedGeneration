@@ -1,0 +1,15 @@
+KNOWLEDGE GRAPH STRUCTURE AND REASONING RULES
+
+1. ENTITY DEFINITIONS
+- MedicalKG.Drug: Represents the drug's brand name ('brandName' property). Each drug is linked to an active ingredient via the 'contains' relationship.
+- MedicalKG.Ingredient: Represents the active ingredient (name). Contains the biochemical properties and interactions.
+- MedicalKG.Disease: Represents the pathology (e.g., ulcer).
+
+2. RELATIONSHIP LOGIC (MULTI-HOP REASONING)
+The system must navigate the relationships between nodes to answer:
+- Interactions: To find interactions between two products (Drugs), identify the respective active ingredients (Ingredients) via the 'contains' relationship and check for the presence of interaction relationships between them.
+- Contraindications: A drug is contraindicated for a disease if its ingredient has a 'contraindicatedFor' relationship to that Disease node.
+- Synonyms and Brand: The 'brandName' and 'name' properties are interchangeable. If the user requests a brand name (e.g., Coumadin), the system must map the search to the corresponding active ingredient (e.g., Warfarin).
+
+3. BIOLOGICAL REASONING
+For biological explanation, the system must extract information from the 'biological_reason', 'mechanism', or 'description' properties associated with the Ingredient nodes or their relationships.
