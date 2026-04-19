@@ -1,121 +1,21 @@
-namespace WaterbaseWISE
-
-AggregatedDataByWaterBody(AggregatedDataByWaterBody): EntityType
-	properties:
-		metadatastatusCode(metadatastatusCode): Text
-		resultMeanValue(resultMeanValue): Float
-		remarks(remarks): Text
-		uid(uid): Integer
-		resultQualityNumberOfSamplesBelowLOQ(resultQualityNumberOfSamplesBelowLOQ): Integer
-		resultQualityMaximumBelowLOQ(resultQualityMaximumBelowLOQ): Integer
-		metadatastatements(metadatastatements): Text
-		resultNumberOfSitesClass1(resultNumberOfSitesClass1): Integer
-		parameterWaterBodyCategory(parameterWaterBodyCategory): Text
-		resultQualityMeanBelowLOQ(resultQualityMeanBelowLOQ): Integer
-		resultMinimumValue(resultMinimumValue): Float
-		resultObservationStatus(resultObservationStatus): Text
-		metadatabeginLifeSpanVersion(metadatabeginLifeSpanVersion): Text
-		resultMaximumValue(resultMaximumValue): Float
-		resultQualityMedianBelowLOQ(resultQualityMedianBelowLOQ): Integer
-		resultNumberOfSitesClass2(resultNumberOfSitesClass2): Integer
-		resultNumberOfSamples(resultNumberOfSamples): Integer
-		parameterSamplingPeriod(parameterSamplingPeriod): Text
-		resultMedianValue(resultMedianValue): Float
-		phenomenonTimeReferenceYear(phenomenonTimeReferenceYear): Integer
-		resultNumberOfSitesClass5(resultNumberOfSitesClass5): Integer
-		resultNumberOfSitesClass3(resultNumberOfSitesClass3): Integer
-		resultUom(resultUom): Text
-		resultStandardDeviationValue(resultStandardDeviationValue): Float
-		metadataversionId(metadataversionId): Text
-		resultNumberOfSitesClass4(resultNumberOfSitesClass4): Integer
-		metadataobservationStatus(metadataobservationStatus): Text
-		procedureLOQValue(procedureLOQValue): Float
-		procedureAnalysedMatrix(procedureAnalysedMatrix): Text
-		resultQualityMinimumBelowLOQ(resultQualityMinimumBelowLOQ): Integer
-		semanticType(semanticType): Text
-			index: Text
-	relations:
-		waterBodyIdentifier(waterBodyIdentifier): WaterBody
-		observedPropertyDeterminandCode(observedPropertyDeterminandCode): ObservedPropertyDeterminand
-
+namespace S_WISE6
 
 WaterBody(waterBody): EntityType
 	properties:
 		waterBodyIdentifier(waterBodyIdentifier): Text
-		waterBodyIdentifierScheme(waterBodyIdentifierScheme): Text
-		countryCode(countryCode): Text
-		idWaterBody(idWaterBody): Integer
-		semanticType(semanticType): Text
-			index: Text
-
-WaterBodyName(waterBodyName): EntityType
-	properties:
-		subUnitIdentifier(subUnitIdentifier): Text
-		rbdName(rbdName): Text
-		confidentialityStatus(confidentialityStatus): Text
-		lon(lon): Float
-		rbdIdentifierScheme(rbdIdentifierScheme): Text
-		naturalAWBHMWB(naturalAWBHMWB): Text
-		subUnitIdentifierScheme(subUnitIdentifierScheme): Text
-		specialisedZoneType(specialisedZoneType): Text
-		reservoir(reservoir): Text
-		rbdIdentifier(rbdIdentifier): Text
-		subUnitName(subUnitName): Text
-		surfaceWaterBodyTypeCode(surfaceWaterBodyTypeCode): Text
-		lat(lat): Float
-		semanticType(semanticType): Text
-			index: Text
-	relations:
-		waterBodyIdentifier(waterBodyIdentifier): WaterBody
-
-ObservedPropertyDeterminand(observedPropertyDeterminand): EntityType
-	properties:
-		idObservedProperty(idObservedProperty): Integer
-		observedPropertyDeterminandLabel(observedPropertyDeterminandLabel): Text
 		observedPropertyDeterminandCode(observedPropertyDeterminandCode): Text
-
-AggregatedData(AggregatedData): EntityType
-	properties:
-		resultMaximumValue(resultMaximumValue): Float
-		resultUom(resultUom): Text
-		resultMedianValue(resultMedianValue): Float
-		procedureLOQValue(procedureLOQValue): Float
-		metadataStatusCode(metadata_statusCode): Text
-		remarks(remarks): Text
-		resultMinimumValue(resultMinimumValue): Float
-		metadataVersionId(metadata_versionId): Text
-		resultQualityMedianBelowLOQ(resultQualityMedianBelowLOQ): Integer
-		metadataBeginLifeSpanVersion(metadata_beginLifeSpanVersion): Text
-		monitoringSiteIdentifierScheme(monitoringSiteIdentifierScheme): Text
-		resultStandardDeviationValue(resultStandardDeviationValue): Float
-		uidAggregatedData(uidAggregatedData): Integer
-		procedureAnalyticalMethod(procedureAnalyticalMethod): Text
-		parameterWaterBodyCategory(parameterWaterBodyCategory): Text
-		countryCode(countryCode): Text
-		resultQualityNumberOfSamplesBelowLOQ(resultQualityNumberOfSamplesBelowLOQ): Integer
-		resultQualityMinimumBelowLOQ(resultQualityMinimumBelowLOQ): Integer
-		metadataObservationStatus(metadata_observationStatus): Text
-		procedureAnalysedMatrix(procedureAnalysedMatrix): Text
-		resultMeanValue(resultMeanValue): Float
-		phenomenonTimeReferenceYear(phenomenonTimeReferenceYear): Integer
-		resultQualityMeanBelowLOQ(resultQualityMeanBelowLOQ): Integer
-		parameterSamplingPeriod(parameterSamplingPeriod): Text
-		resultObservationStatus(resultObservationStatus): Text
-		monitoringSiteIdentifier(monitoringSiteIdentifier): Text
-		metadataStatements(metadata_statements): Text
-		resultQualityMaximumBelowLOQ(resultQualityMaximumBelowLOQ): Integer
-		resultNumberOfSamples(resultNumberOfSamples): Integer
-		parameterSampleDepth(parameterSampleDepth): Float
-		semanticType(semanticType): Text
-			index: Text
-	relations:
-		observedPropertyDeterminandCode(observedPropertyDeterminandCode): ObservedPropertyDeterminand
-
-SpatialObjectDerivedData(SpatialObjectDerivedData): EntityType
-	properties:
-		monitoringSiteName(monitoringSiteName): Text
-		thematicIdIdentifierScheme(thematicIdIdentifierScheme): Text
-		thematicIdIdentifier(thematicIdIdentifier): Text
-		semanticType(semanticType): Text
-			index: Text
-
+ 		observedPropertyDeterminandLabel(observedPropertyDeterminandLabel): Text
+ 		parameterSamplingPeriod(parameterSamplingPeriod): Text
+ 		procedureLOQValue(procedureLOQValue): Float		
+ 		resultNumberOfSamples(resultNumberOfSamples): Integer
+ 		resultQualityNumberOfSamplesBelowLOQ(resultQualityNumberOfSamplesBelowLOQ): Integer
+ 		resultQualityMinimumBelowLOQ(resultQualityMinimumBelowLOQ): Integer
+ 		resultMinimumValue(resultMinimumValue): Float
+ 		resultQualityMeanBelowLOQ(resultQualityMeanBelowLOQ): Integer
+ 		resultMeanValue(resultMeanValue): Float
+ 		resultQualityMaximumBelowLOQ(resultQualityMaximumBelowLOQ): Integer
+ 		resultMaximumValue(resultMaximumValue): Float
+ 		resultQualityMedianBelowLOQ(resultQualityMedianBelowLOQ): Integer
+ 		resultMedianValue(resultMedianValue): Float
+ 		resultStandardDeviationValue(resultStandardDeviationValue): Float
+	

@@ -1,0 +1,7 @@
+patientId,mrn,taxCode,familyName,givenName,gender,birthsex,dateOfBirth,race,ethnicity,language,addressLine,city,state,zip
+BNCMRA91H61F839B,pat-mrn-1,BNCMRA91H61F839B,Bianchi,Maria,female,F,1991-06-21,ASKU,2186-5,no,2 West Side Rd,Naple,IT,80013
+RSSMRA99A01D612J,pat-mrn-2,RSSMRA99A01D612J,Rossi,Mario,male,M,1999-01-01,2106-3,2186-5,en-US,1 Main street,Florence,IT,50100
+PLOMRC80R10L736S,pat-mrn-3,PLOMRC80R10L736S,Polo,Marco,male,M,1980-10-10,2106-3,2186-5,it-IT,1 Corte Seconda del Milion,Venice,IT,30100
+MNTMRA81S11C615Z,pat-mrn-4,MNTMRA81S11C615Z,Montessori,Maria,female,F,1980-11-11,2106-3,2186-5,it-IT,10 Piazza Mazzini,Chiaravalle,IT,60033
+MNZLSN92T12F205A,pat-mrn-5,MNZLSN92T12F205A,Manzoni,Alessandro,male,M,1992-12-12,2106-3,2186-5,it-IT,1 Marone street,Milan,IT,20100
+

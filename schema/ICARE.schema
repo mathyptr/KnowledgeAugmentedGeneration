@@ -1,0 +1,34 @@
+namespace ICARE
+
+Patient(patient): EntityType
+	properties:
+		mrn(mrn): Text
+		taxCode(taxCode): Text
+		familyName(familyName): Text
+		givenName(givenName): Text
+		gender(gender): Text
+		birthsex(birthsex): Text
+		dateOfBirth(dateOfBirth): Text
+		race(race): Text
+		ethnicity(ethnicity): Text
+		language(language): Text
+		addressLine(addressLine): Text
+		city(city): Text
+		state(state): Text
+		zip(zip): Text
+		semanticType(semanticType): Text
+			index: Text		
+	relations:
+		has(ClinicalNotes): ClinicalNotes		
+
+ClinicalNotes(ClinicalNotes): EntityType
+	properties:
+		noteId(noteId): Text
+		encounterId(encounterId): Text
+		noteDate(noteDate): Text
+		author(author): Text
+		noteText(noteText): Text
+		semanticType(semanticType): Text
+			index: Text		
+	relations:
+		belongTO(patient): Patient		

@@ -1,0 +1,6 @@
+noteId, encounterId, noteDate, author, noteText
+NOTE01,ENC100,2026-03-05,Dr. White,Patient stable. Proceed with tests.
+NOTE02,ENC200,2026-04-01,Dr. White,Patient intolerant to nitrite. Be careful.
+NOTE03,ENC300,2026-04-02,Dr. Rose,Patient maybe intolerant to nitrite. Proceed with tests.
+NOTE04,ENC400,2026-04-03,Dr. Green,Patient intolerant to nitrate. Be careful.
+NOTE05,ENC500,2026-04-01,Dr. Purple,Patient intolerant to nitrate. Avoid any contact.
